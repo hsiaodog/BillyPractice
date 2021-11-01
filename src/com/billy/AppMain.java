@@ -147,7 +147,7 @@ public class AppMain {
 //        ListNode listNodes2 = listNode2.arrayToListNode(array2);
 //        Solution ans = new Solution();
 //        ListNode ans2 = ans.mergeTwoLists(listNodes1,listNodes2);
-        String[] input = {"aaa","aaa","bbb","ccc","aaa","bbb","ccc"};
+        String[] input = {"aaa","aaa","bbb","ccc","aaa","bbb","ccc","ddd"};
 //        int[] input = {4,1,3,3,5,2};
         Solution solution = new Solution();
         String[] ans = solution.removeDup(input);
