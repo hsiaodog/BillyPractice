@@ -64,15 +64,15 @@ public class Operation<IN, OUT> extends AbstractPipeline<IN, OUT> {
             }
         };
     }
-/**
- *                sorted sink
- *                      begin => list
- *                      end =>  list.sort(cpt)
- *                              for loop list
- *                                  downstreamSink.accept(v)
- *                              downstreamSink.end()
- *                      accept => list.add(v)
- */
+    /**
+     *                sorted sink
+     *                      begin => list
+     *                      end =>  list.sort(cpt)
+     *                              for loop list
+     *                                  downstreamSink.accept(v)
+     *                              downstreamSink.end()
+     *                      accept => list.add(v)
+     */
     @Override
     public IStream<OUT> sorted(Comparator<OUT> cpt) {
         return new Operation<OUT,OUT>(this) {
